@@ -28,9 +28,12 @@ import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.Chat
+import androidx.compose.material.icons.automirrored.filled.Send
+import androidx.compose.material.icons.automirrored.filled.VolumeUp
+import androidx.compose.material.icons.automirrored.filled.Undo
 import androidx.compose.material.icons.filled.AutoAwesome
 import androidx.compose.material.icons.filled.Campaign
-import androidx.compose.material.icons.filled.Chat
 import androidx.compose.material.icons.filled.Code
 import androidx.compose.material.icons.filled.Hub
 import androidx.compose.material.icons.filled.Layers
@@ -82,7 +85,7 @@ enum class LuminaTab(
     val icon: ImageVector
 ) {
     ORB_HOME("Orb Core", Icons.Default.RadioButtonChecked),
-    CONSOLE("Console", Icons.Default.Chat),
+    CONSOLE("Console", Icons.AutoMirrored.Filled.Chat),
     AUTOMATION("OS Control", Icons.Default.TouchApp),
     MACROS("Macros", Icons.Default.Layers),
     WHATSAPP("DirectReply", Icons.Default.Notifications),
