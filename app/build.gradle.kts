@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-  namespace = "com.example"
+  namespace = "com.theflaxyplays.lumina"
   compileSdk { version = release(36) { minorApiLevel = 1 } }
 
   defaultConfig {
@@ -59,6 +59,17 @@ android {
   dependenciesInfo {
     includeInApk = false
     includeInBundle = true
+  }
+
+  // Enable desugaring for Java 11 features support on older APIs
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+  }
+
+  // Gradle 10 compatibility: Disable deprecated features
+  kotlinOptions {
+    jvmTarget = "11"
   }
 }
 
