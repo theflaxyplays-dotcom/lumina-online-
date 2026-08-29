@@ -102,7 +102,7 @@ abstract class LuminaDatabase : RoomDatabase() {
                     context.applicationContext,
                     LuminaDatabase::class.java,
                     "lumina_os_master.db"
-                ).fallbackToDestructiveMigration().build()
+                ).fallbackToDestructiveMigration(dropAllTables = false).build()
                 INSTANCE = instance
                 instance
             }
