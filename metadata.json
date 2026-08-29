@@ -1,0 +1,6 @@
+{
+  "name": "Lumina AI",
+  "description": "Lumina AI - Autonomous AI OS Controller, Dynamic Voice Companion & Phone Automation Agent",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

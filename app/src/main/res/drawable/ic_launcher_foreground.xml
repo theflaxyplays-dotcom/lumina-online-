@@ -1,0 +1,49 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Outer Glow Ring -->
+    <path
+        android:pathData="M 54,26 A 28,28 0 1 0 54,82 A 28,28 0 1 0 54,26 Z"
+        android:strokeWidth="2.5"
+        android:strokeColor="#6600E5FF"
+        android:fillColor="#00000000" />
+    
+    <!-- Orbital Ring 1 -->
+    <path
+        android:pathData="M 30,54 A 26,14 45 1 0 78,54 A 26,14 45 1 0 30,54 Z"
+        android:strokeWidth="2"
+        android:strokeColor="#CCFF4081"
+        android:fillColor="#00000000" />
+
+    <!-- Orbital Ring 2 -->
+    <path
+        android:pathData="M 30,54 A 26,14 -45 1 0 78,54 A 26,14 -45 1 0 30,54 Z"
+        android:strokeWidth="2"
+        android:strokeColor="#CC7C4DFF"
+        android:fillColor="#00000000" />
+
+    <!-- Core Glowing Sphere -->
+    <path
+        android:pathData="M 54,39 A 15,15 0 1 0 54,69 A 15,15 0 1 0 54,39 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="42"
+                android:startY="42"
+                android:endX="66"
+                android:endY="66"
+                android:type="linear">
+                <item android:color="#FFFF80AB" android:offset="0.0" />
+                <item android:color="#FF7C4DFF" android:offset="0.5" />
+                <item android:color="#FF00E5FF" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Center Neural Sparkle -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M 54,46 L 56,52 L 62,54 L 56,56 L 54,62 L 52,56 L 46,54 L 52,52 Z" />
+</vector>
