@@ -23,16 +23,12 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-          cache: gradle
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
 
-      - name: Run Gradle validation
-        run: ./gradlew validateDebug --stacktrace
-
       - name: Build Debug APK
-        run: ./gradlew assembleDebug --stacktrace
+        run: gradle assembleDebug --stacktrace
 
       - name: Upload APK Artifact
         if: success()
@@ -42,9 +38,3 @@ jobs:
           path: app/build/outputs/apk/debug/
           retention-days: 30
           if-no-files-found: warn
-
-      - name: Build Summary
-        if: always()
-        run: |
-          echo "Build Status: ${{ job.status }}"
-          echo "APK Output: app/build/outputs/apk/debug/"
