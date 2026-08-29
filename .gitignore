@@ -1,18 +1,59 @@
-*.iml
+# Gradle
+.gradle/
 .gradle
-.kotlin
-/local.properties
+gradle.properties.local
+
+# Build outputs
+/build
+build/
+*.apk
+*.aab
+
+# Android Studio
+.idea/
+*.iml
+*.iws
+*.ipr
+.DS_Store
 /.idea/caches
 /.idea/libraries
 /.idea/modules.xml
 /.idea/workspace.xml
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
 .externalNativeBuild
-.cxx
+
+# Kotlin
+.kotlin/
+
+# Local files
+/local.properties
 local.properties
-.env
+
+# Keystores and certificates
+*.keystore
+*.jks
+*.p12
+*.p8
 debug.keystore
+
+# Environment variables
+.env
+.env.local
+
+# Native
+/captures
+.cxx/
+*.so
+
+# IDE specific
+*.swp
+*.swo
+*~
+.vscode/
+.vscode
+*.asm
+
+# OS specific
+.DS_Store
+Thumbs.db
